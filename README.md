@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+Name - Gauri Joge
+Roll no. - 05
+Batch - A1
+Branch - Computer Technology
+Reg no - 23070992
 
-## Project info
 
-**URL**: https://lovable.dev/projects/dd48254d-e687-40eb-b0d7-1c508ba6d84a
+Portfolio  Website
+Backend (Java + Spring Ecosystem)
+Java
+The core programming language used to build the backend logic for handling requests, managing routes, and structuring the server-side architecture.
 
-## How can I edit this code?
+Spring Boot
+-Used for creating a lightweight and fast REST API layer.
+-Handles routing, controllers, exception handling, and service layers.
+-Provides auto-configuration and production-ready features.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+Frontend (React + TypeScript)
+-Although the project is Java FSD, the frontend is built using:
+-React for component-based UI
+-TypeScript for type safety
+-Tailwind CSS for styling
+-JavaScript / HTML / CSS for structure and scripting
+-These integrate with the REST APIs provided by the Spring Boot backend.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dd48254d-e687-40eb-b0d7-1c508ba6d84a) and start prompting.
+DevOps & Deployment (Tools Used)
+Git
+-Version control for maintaining clean commits and collaborative workflow.
 
-Changes made via Lovable will be committed automatically to this repo.
+Module 1: Core Java Fundamentals (Backend Foundations)
+This module forms the base layer of the backend logic used in the portfolio system.
+Concepts Applied
+Java program structure
+Primitive data types (used for percentage values of skills)
+Variables & operators
+Control flow (if-else, loops, switch)
+Basic validations
+Module 1 is Used in the Portfolio Website
+-Handling skill percentages (e.g., Java 95%, React 88%) using primitive types
+-Looping through skills/projects to generate API responses
+-Input validation for contact form submissions
+-Using conditions to check if fields are empty or invalid
+-Creating the initial structure for backend classes and services
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Module 2: OOP + Arrays + Collections + Exception Handling (Main Backend Engine)
+This module gives the website its full structure, scalability, and real functionality.
+OOP Implementation
+My portfolio backend is fully object-oriented:
+Classes created:
+Skill, Project, Category, ContactMessage, User, Experience
+Encapsulation:
+All fields are private with getter/setter methods
+Inheritance:
+Example:
+Skill → BackendSkill, FrontendSkill, DevOpsSkill
+Polymorphism:
+Different skill categories override the display method
+Abstraction:
+Interface like Displayable for items displayed on UI
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Collections Used
+Your skill categories and project data are managed with Java Collections:
+ArrayList<Project> → Stores all portfolio projects
+HashMap<String, Integer> → Skill name → percentage
+LinkedList<ContactMessage> → Stores contact form messages
+HashSet<String> → Avoid duplicate emails
+TreeMap<Integer, Skill> → Sorted skills by percentage
+Collections make the backend dynamic and easy to update.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dd48254d-e687-40eb-b0d7-1c508ba6d84a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Exception Handling
+Custom and built-in exceptions ensure the backend never crashes:
+InvalidSkillValueException
+EmptyFieldException
+DuplicateProjectException
